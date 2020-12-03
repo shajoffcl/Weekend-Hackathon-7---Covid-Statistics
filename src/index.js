@@ -8,7 +8,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 const { connection } = require('./connector')
 
-
+app.get("/", (req, res)=>{
+    res.send("Covid health")
+});
 
 
 
